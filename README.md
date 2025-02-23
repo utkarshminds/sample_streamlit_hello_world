@@ -15,6 +15,7 @@ Sample website using streamlit and generative AI
         pip install numpy
         pip install pandas
         pip install matplotlib
+        pip install pipreqs
 
 # IN CASE ERROR IN STEP 5 
 # Press Ctrl + Shift + P
@@ -32,3 +33,20 @@ Sample website using streamlit and generative AI
 
 # Step 8 - Create a file named app.py
             Put your website code in that file
+
+# Step 8a - Create requirements.txt file
+            type in terminal pipreqs --ignore myenv_name/ --force
+
+# 9- Add new entry to .gitignore 
+      myenv_name/
+    then save
+
+# 10 - go to Source control
+        click on stage change
+        then stage all changes
+        then add commit message
+        then commit and sync
+
+# 11 - go to github.com and compare and pull request with main. Then merge and confirm merge.
+
+# 12
