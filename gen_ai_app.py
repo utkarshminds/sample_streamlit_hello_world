@@ -28,10 +28,17 @@ Steps
     pranav = "pranav123"
     raju = 'raju123'
     username = "password"
-6. Add verification code in your python file
+6. Add verification (username and password) code in your python file
+7. Write the main project vacation planner code
+8. Generate requirements.txt file using
+   type in terminal
+   pipreqs --ignore venv_folder/ --force
+9. commit and sync to github
+10. copy secrets.toml contents in 
+    settings of streamlit app on streamlit.io
 '''
 import streamlit as st
-
+import google.generativeai as genai 
 #VERIFICATION CODE STARTS
 import hmac
 
@@ -76,7 +83,7 @@ if not check_password():
 
 st.title('Vacation planner using Gen AI')
 
-import google.generativeai as genai 
+
 genai.configure(api_key=st.secrets['API_KEY']['api_key']) #API KEY
 model = genai.GenerativeModel("gemini-2.0-flash") #MODEL NAME AND VERSION
 
