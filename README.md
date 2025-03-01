@@ -63,6 +63,14 @@ and check and install the extensions
         then add commit message
         then commit and sync
 
+#Altenative Step 10 using terminal
+    git branch branch_name (creating new branch)
+    git checkout branch_name (switching from one branch to another)
+    git status (finding file changes)
+    git add filename.py (staging file for commit)
+    git commit -m 'commit message' (commit)
+    git push (sync to remote branch)
+
 # 11 - go to github.com and compare and pull request with main. Then merge and confirm merge.
 
 # 12 - go to streamlit.io
@@ -71,3 +79,4 @@ and check and install the extensions
         select branch
         select file
         click deploy
+
