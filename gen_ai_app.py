@@ -76,5 +76,20 @@ if not check_password():
 
 st.title('Vacation planner using Gen AI')
 
+import google.generativeai as genai 
+genai.configure(api_key=st.secrets['API_KEY']['api_key']) #API KEY
+model = genai.GenerativeModel("gemini-2.0-flash") #MODEL NAME AND VERSION
+
+budget_data = st.text_input('Enter budget in dollars')
+dest_data = st.text_input('Enter destination city')
+days_data = st.text_input('Enter number of days')
+group_data = st.text_input('Enter group size')
+contraints_data = st.text_input('Enter special contraints (food, young or old, hotel type, room type)')
+
+response = model.generate_content(f"""Create a vacation plan based on budget = {budget_data},
+                                   destination is {dest_data} for number of days {days_data}
+                                  group size {group_data} and consider contraints
+                                  {contraints_data}""")
+st.write(response.text)
 
 
