@@ -4,6 +4,9 @@ __pycache__/
 *$py.class
 
 project1/
+.streamlit/
+secrets.toml
+*.toml
 
 # C extensions
 *.so
