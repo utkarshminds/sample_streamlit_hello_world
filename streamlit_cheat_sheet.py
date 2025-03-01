@@ -209,3 +209,17 @@ st.warning("Warning message")
 st.info("Info message")
 st.success("Success message")
 st.exception('error')
+
+'''
+Homework
+========
+
+1. Calculator
+2. Rock paper scissor game
+3. Currency converter
+4. Feedback of image
+5. Feedback or registration form
+6. Upload a dataset and get data viz
+7. Portfolio website
+8. dashboard  
+'''
