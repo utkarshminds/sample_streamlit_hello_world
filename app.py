@@ -63,10 +63,13 @@ else:
 
 #True or false
 st.subheader('Checkbox - Do you accept terms and condition')
+
 agree = st.checkbox("I agree")
 
 if agree:
     st.write("Great!")
+else:
+    st.write('Sorry you cant continue')
 
 option = st.selectbox(
     "How would you like to be contacted?",
