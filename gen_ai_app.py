@@ -39,7 +39,6 @@ Steps
 '''
 import streamlit as st
 import google.generativeai as genai 
-#VERIFICATION CODE STARTS
 import hmac
 
 def check_password():
@@ -83,6 +82,10 @@ if not check_password():
 
 st.title('Vacation planner using Gen AI')
 
+if st.button('Go to Cheat sheet'):
+    st.switch_page("pages/streamlit_cheat_sheet.py")
+
+st.page_link("pages/streamlit_cheat_sheet.py", label="Cheat Sheet")
 
 genai.configure(api_key=st.secrets['API_KEY']['api_key']) #API KEY
 model = genai.GenerativeModel("gemini-2.0-flash") #MODEL NAME AND VERSION
