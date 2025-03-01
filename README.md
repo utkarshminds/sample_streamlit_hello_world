@@ -1,7 +1,7 @@
 # sample_streamlit_hello_world
 #Ref: https://github.com/utkarshminds/sample_streamlit_hello_world
 Sample website using streamlit and generative AI
-#install git, vs code, sign in on github.com and streamlit.io
+#install git, vs code, sign in on github.com and streamlit.io, python
 
 # 1- sign in to github.com
 # 2- create a repo, create personal branch and copy clone url
@@ -9,11 +9,11 @@ Sample website using streamlit and generative AI
 # 3- clone repo on vs code and change from main to our branch
 # 4- open new terminal and create virtual env
 
-# Step 4a - To Set your username type in terminal
+# Step 4a - To Set your github username type in terminal
 
 git config --global user.name "username"
 
-# Step 4b - To Set your username type in terminal Set your email address: 
+# Step 4b - To Set your github email type in terminal Set your email address: 
 
 git config --global user.email "MY_NAME@example.com"
 
